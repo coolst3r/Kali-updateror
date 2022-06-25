@@ -10,11 +10,12 @@ typedef void (*DrawModelExecuteFn) (void*, void*, void*, const ModelRenderInfo_t
 
 void Hooks::DrawModelExecute(void* thisptr, void* context, void *state, const ModelRenderInfo_t &pInfo, matrix3x4_t* pCustomBoneToWorld)
 {
-	if (!Settings::ScreenshotCleaner::enabled || !engine->IsTakingScreenshot())
-	{
-		Chams::DrawModelExecute(thisptr, context, state, pInfo, pCustomBoneToWorld);
-	}
-
+//	if (!Settings::ScreenshotCleaner::enabled || !engine->IsTakingScreenshot())
+//	{
+//		Chams::DrawModelExecute(thisptr, context, state, pInfo, pCustomBoneToWorld);
+//	}
+// broken waiting for commit
+	
  	static matrix3x4_t BodyBoneMatrix[128];
         C_BasePlayer* localplayer = (C_BasePlayer*) entityList->GetClientEntity(engine->GetLocalPlayer());
 
