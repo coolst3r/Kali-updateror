@@ -1,5 +1,5 @@
-#pragma once
 #include <array>
+#pragma once
 #include "types.h"
 
 namespace panorama
